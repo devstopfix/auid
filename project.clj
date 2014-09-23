@@ -1,5 +1,5 @@
-(defproject devstopfix.auid "0.1.0"
-  :description "Application Unique Identifier Generator"
+(defproject devstopfix.auid "0.2.0"
+  :description "Application Unique Identifiers"
   :url "https://github.com/devstopfix/auid"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
