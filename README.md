@@ -1,7 +1,7 @@
 Application Unique Identifier (AUID)
 ====================================
 
-This Clojure library generates unique 64-bit identifiers outside of your database for use as [surrogate keys][1]. It is intended for use in testing and prototypes - NOT for long term storage of production data (see the constraints).
+This Clojure library generates unique 63-bit identifiers outside of your database for use as [surrogate keys][1]. It is intended for use in testing and prototypes - NOT for long term storage of production data (see the constraints).
 
 AUID vs Snowflake
 -----------------

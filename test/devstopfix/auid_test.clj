@@ -7,9 +7,11 @@
             [clojure.test.check.properties :as prop]
             [clojure.test.check.clojure-test :as ct :refer (defspec)]))
 
-(defn epoch-date [ms-ago]
-  (Date. (+ clojure-epoch ms-ago)))
 
+(set! *warn-on-reflection* true)
+
+(defn epoch-date [^Long ms-ago]
+  (Date. (+ clojure-epoch ms-ago)))
 
 ; https://github.com/clojure/test.check/blob/master/doc/intro.md
 (defn ascending?

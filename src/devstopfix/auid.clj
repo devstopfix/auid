@@ -1,10 +1,9 @@
 (ns devstopfix.auid
   (import [java.util Date Random]))
 
-(set! *warn-on-reflection* true)
-
+; Our epoch will be the date Clojure v1 was announced
 ; (.getTime (Date. (- 2009 1900) (dec 4) 5))
-(def clojure-epoch 1238886000000)
+(def ^Long clojure-epoch 1238886000000)
 
 (defn- combine-counter-with-machine [c m]
   "Return the least signficant 24 bits of the result
